@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/font/Roboto/Roboto-Medium.ttf">
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/master.css">
+</head>
+
+<body>
+    <section id="main">
+        <div class="calculator col-8 col-sm-6 col-md-5 col-lg-3  bg-secondary">
+            <div class="top-div w-100 d-flex">
+                <div class="logo w-50">
+                    <h2 class="d-flex w-100">Calculator</h2>
+                    <span class="d-flex w-100">CL-001</span>
+                </div>
+                <div class="energy d-flex justify-content-end align-items-center  w-50">
+                    <div class="w-80 h-20 d-flex ">
+                        <div class="w-20 h-100"></div>
+                        <div class="w-20 h-100"></div>
+                        <div class="w-20 h-100"></div>
+                        <div class="w-20 h-100"></div>
+                        <div class="w-20 h-100"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- logo******** -->
+            <div class="LED w-100 d-flex justify-content-center align-items-center">
+                <input type="text " placeholder="0"  id="displayresult">
+            </div>
+            <!-- LED********* -->
+            <div class="button ">
+                <div class="top_button d-flex justify-content-between">
+                    <input class="" type="button" value="C" onclick="_reset()">
+                    <input class="" type="button" value="(" onclick="addToCalculator(event.target.value)">
+                    <input class="" type="button" value=")" onclick="addToCalculator(event.target.value)">
+                    <input class="" type="button" value="%" onclick="addToCalculator(event.target.value)">
+                </div>
+                <div class="bottom_button w-100 d-flex flex-wrap justify-content-between">
+                    <input type="button" value="&radic;" onclick="mathCalculator('sqrt')">
+                    <input type="button" value="r" onclick="mathCalculator('round')">
+                    <input type="button" value="|x|" onclick="mathCalculator('abs')">
+                    <input type="button" value="&divide;" onclick="addToCalculator('/')">
+                    <input type="button" value="7" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="8" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="9" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="&times;" onclick="addToCalculator('*')">
+                    <input type="button" value="4" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="5" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="6" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="-" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="1" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="2" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="3" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="+" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="0" onclick="addToCalculator(event.target.value)">
+                    <input type="button" value="." onclick="addToCalculator(event.target.value)">
+                    <input  type="button" value="=" onclick="_equal()">  
+                </div>
+            </div>
+        </div>
+        <h1>Designed By Hossein Deyri</h1>
+    </section>
+</body>
+<script src="assets/js/master.js"></script>
+</html>
