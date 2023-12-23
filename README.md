@@ -1,4 +1,5 @@
 # Calculator
+Responsive
 
 ![Capture](https://github.com/hossein-deyri/Calculator/assets/136192436/53bb5fa7-daa9-4874-8bc6-e5218ecf4ad5)
 
